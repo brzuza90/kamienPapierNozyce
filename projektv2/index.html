@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kamień, papier, nożyce</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Gra Kamień, papier, nożyce</h1>
+    <section class="select">
+        <h2>Proszę wybierz:</h2>
+        <img data-option="kamień" data-number="0" src="img/kamien.jpg" alt="kamien" title="kamien">
+        <img data-option="papier" data-number="1" src="img/papier.jpg" alt="papier" title="papier">
+        <img data-option="nożyce" data-number="2" src="img/nozyczki.jpg" alt="nożyce" title="nożyce">
+
+    </section>
+    <button class="start">Zagrajmy!</button>
+    <section class="leftPanel">
+        <h3>Wynik gry</h3>
+        <p>Twój wybór: <span id="yourChoice" data-summary="yourChoice"></span></p>
+        <p>Wybór komputera: <span id="aiChoice" data-summary="aiChoice"></span></p>
+        <h2>Kto wygrał: <span id="whoWin" data-summary="whoWin"></span></h2>
+    </section>
+    <section class="rightPanel">
+        <h3>Aktualny wynik</h3>
+        <p class="gameNumber">Liczka rozegranych gier: <span>0</span> </p>
+        <p class="wins">Wygrane: <span>0</span></p>
+        <p class="losses">Przegrane: <span>0</span></p>
+        <p class="draws">Remisy: <span>0</span></p>
+    </section>
+    <script src="main2.js"></script>
+</body>
+
+</html>
